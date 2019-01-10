@@ -7,16 +7,16 @@ sidebar:
     education: True # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Alan Doe
-    tagline: Full Stack Developer
+    name: Spencer Sullivan
+    tagline: Software Engineer
     avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: hello@webjeda.com
-    phone: 012 345 6789
-    website: blog.webjeda.com #do not add http://
+    email: sas@fsullivans.net
+    phone: (512) 922-2434
+    website: spencer-sullivan.com
     linkedin: alandoe
-    github: sharu725
+    github: spencer-sullivan
     gitlab:
     bitbucket:
     twitter: '@webjeda'
@@ -28,17 +28,8 @@ sidebar:
       - idiom: English
         level: Native
 
-      - idiom: French
-        level: Professional
-
-      - idiom: Spanish
-        level: Professional
-
     interests:
       - item: Climbing
-        link:
-
-      - item: Snowboarding
         link:
 
       - item: Cooking
