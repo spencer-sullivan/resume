@@ -19,12 +19,18 @@
   {% for project in projects.assignments %}
     <div class="item">
 
-      <span class="project-title">
-        <a href="{{ project.link }}">{{ project.title }}</a>
-      </span>
+      <span class="project-title"><b>{{ project.title }}</b></span>
 
-      {% if project.tagline %}
-      - <span class="project-tagline">{{ project.tagline }}</span>
+      {% if project.description %}
+        <span class="project-description">{{ project.description }}</span>
+      {% endif %}
+
+      {% if project.bullets %}
+        <ul class="project-bullets">
+          {% for bullet in project.bullets %}
+            <li class="project-bullet-text">{{ bullet.text }}</li>
+          {% endfor %}
+        </ul>
       {% endif %}
 
     </div><!--//item-->
