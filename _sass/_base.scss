@@ -212,6 +212,9 @@ p {
             margin-bottom: 15px;
         }
     }
+    .project-title {
+      font-weight: bold;
+    }
 
     .publication-title {
         font-size: 16px;
@@ -242,6 +245,7 @@ p {
     }
     .category-title {
         font-size: 14px;
+        font-weight: bold;
         margin-top: 0;
         margin-bottom: 12px;
     }
