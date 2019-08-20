@@ -11,11 +11,14 @@
 
   {% for experience in experiences %}
   <div class="item">
-
     <div class="meta">
-
       <div class="upper-row">
-        <h3 class="job-title">{{ experience.role }}</h3>
+          <h3 class="job-title">
+            {% if experience.logo %}
+              <img class="logo" src="{{ site.baseurl }}/assets/images/{{ experience.logo }}" alt="{{ experience.company }}" />
+            {% endif %}
+            {{ experience.role }}
+          </h3>
         <div class="time">{{ experience.time }}</div>
       </div><!--//upper-row-->
 
@@ -34,4 +37,3 @@
 
 </section><!--//section-->
 {% endif %}
-

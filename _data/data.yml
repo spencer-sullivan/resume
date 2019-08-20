@@ -38,6 +38,28 @@ sidebar:
       - item: Cooking
         link:
 
+skills:
+    title: Skills &amp; Proficiency
+
+    categories:
+      - name: Platforms
+        list: Amazon Web Services (AWS), On-Premise Cluster
+
+      - name: Big Data Tools
+        list: Hadoop, Hive, Spark, Kafka / Kinesis
+
+      - name: Databases
+        list: Snowflake, Presto, Athena, Redshift, Postgres, Redis, Dynamo
+
+      - name: Programming Languages
+        list: Python, Go, Ruby, SQL, HTML, JS
+
+      - name: Data Pipeline Frameworks
+        list: Airflow, Luigi, Glue, Matillion
+
+      - name: Other Technologies
+        list: Docker, Git, Gitlab, Kubernetes, DataDog, Tableau, Lambda, SQS
+
 career-profile:
     title: Career Profile
     summary: |
@@ -54,6 +76,7 @@ education:
 experiences:
     - role: Senior Software Engineer
       time: 2017 - Present
+      logo: # spiceworks-logo.png
       company: Spiceworks, Austin
       details: |
         Helping to architect and develop large-scale data pipelines for
@@ -61,6 +84,7 @@ experiences:
 
     - role: Software Engineer
       time: 2014 - 2017
+      logo: # spiceworks-logo.png
       company: Spiceworks, Austin
       details: |
         Worked with a team of developers to write business-critical,
@@ -69,6 +93,7 @@ experiences:
 
     - role: Software Development Intern
       time: 2010 - 2014
+      logo: # spiceworks-logo.png
       company: Spiceworks, Austin
       details: |
         Started writing test automation and worked my way into web development.
@@ -106,15 +131,15 @@ projects:
           - text: "Led rewrite of service"
           - text: "Integrated open-source browser fingerprinting"
 
-      - title: Ad Bidder
+      - title: Real Time Bidder
         description: "Set of services for intelligently bidding on ad inventory"
         bullets:
-          - text: "Took product from $0 to ~$10M in annual revenue"
+          - text: "Wrote services that handled requests in under 10ms (including network latency)"
+          - text: "Engineered web server that horizontally scaled up to 1 billion requests per day"
           - text: "Designed micro-service architecture comprising 10+ services"
-          - text: "Wrote web server that handled up to 1 billion requests per day"
-          - text: "Responded to requests in under 10ms (including network latency)"
           - text: "Productionized machine learning model to compute bids"
           - text: "Built data pipelines to facilitate updating models"
+          - text: "Took product from $0 to ~$10M in annual revenue"
           - text: "Rigorously tested and wrote monitoring"
 
       - title: Segmentation service
@@ -124,25 +149,3 @@ projects:
           - text: "Integrated with 3rd parties using cookie matching"
           - text: "Debugged / resolved problems around user-identity mappings"
           - text: "Worked with Data Science to incorporate intent modeling"
-
-skills:
-    title: Skills &amp; Proficiency
-
-    categories:
-      - name: Platforms
-        list: Amazon Web Services (AWS), On-Premise Cluster
-
-      - name: Big Data Tools
-        list: Hadoop, Hive, Spark, Kafka / Kinesis
-
-      - name: Databases
-        list: Snowflake, Presto, Athena, Redshift, Postgres, Redis, Dynamo
-
-      - name: Programming Languages
-        list: Python, Go, Ruby, SQL, HTML, JS
-
-      - name: Data Pipeline Frameworks
-        list: Airflow, Luigi, Glue, Matillion
-
-      - name: Other Technologies
-        list: Docker, Git, Gitlab, Kubernetes, DataDog, Tableau

@@ -72,13 +72,14 @@ p {
     }
 
     .avatar {
-        //used for profile image
+        // used for profile image
         max-width: 100px;
         margin-bottom: 15px;
         border: 0px solid #fff;
         border-radius: 100%;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     }
+
     .contact-list {
         .fas, .fab {
             margin-right: 5px;
@@ -180,6 +181,11 @@ p {
         overflow: hidden;
         margin-bottom: 2px;
     }
+    .logo {
+        // used for company logos
+        max-width: 20px;
+    }
+
     .job-title, .degree {
         color: $text-color;
         font-size: 16px;
