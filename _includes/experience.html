@@ -1,0 +1,40 @@
+{% assign experience = site.data.data.experience %}
+{% if experience %}
+<section class="section experience-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ experience.title }}
+  </h2>
+
+  {% if experience.intro %}
+  <div class="intro">
+      <p>{{ experience.intro }}</p>
+  </div><!--//intro-->
+  {% endif %}
+
+  {% for project in experience.projects %}
+    <div class="item">
+
+      <span class="project-title">{{ project.title }}</span>
+
+      {% if project.description %}
+        <span class="project-description">{{ project.description }}</span>
+      {% endif %}
+
+      {% if project.bullets %}
+        <ul class="project-bullets">
+          {% for bullet in project.bullets %}
+            <li class="project-bullet-text">{{ bullet.text }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+    </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
+{% endif %}

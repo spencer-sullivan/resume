@@ -38,8 +38,22 @@ sidebar:
       - item: Cooking
         link:
 
+summary:
+    title: Summary
+    text: |
+      Senior Software/Data/ML Engineer with 6+ years of experience in building business-critical,
+      high-volume, low-latency applications that rely heavily on data and modeling.
+      Currently helping Spiceworks with Petabyte scale data pipelines and applications.
+
+ideal-job:
+    title: Ideal Job
+    summary: |
+      I am looking for a job in the San Diego area where I can significanlty impact the business,
+      work closely with researchers/data scientists to develop, productionize, and scale models, and continually
+      learn and grow as an engineer.
+
 skills:
-    title: Skills &amp; Proficiency
+    title: Key Skills
 
     categories:
       - name: Platforms
@@ -60,92 +74,109 @@ skills:
       - name: Other Technologies
         list: Docker, Git, Gitlab, Kubernetes, DataDog, Tableau, Lambda, SQS
 
-career-profile:
-    title: Career Profile
-    summary: |
-      Senior Software/Data/ML Engineer with 6+ years of experience in building business-critical,
-      high-volume, low-latency applications that rely heavily on data and modeling.
-      Currently helping Spiceworks with Petabyte scale data pipelines and applications.
-
 education:
     - degree: BS in Computer Science
       university: University of Texas at Austin
       time: 2011 - 2014
       details:
 
-experiences:
-    - role: Senior Software Engineer
-      time: 2017 - Present
-      logo: # spiceworks-logo.png
-      company: Spiceworks, Austin
-      details: |
-        Helping to architect and develop large-scale data pipelines for
-        various business needs.
+career:
+    title: Career
+    roles:
+      - name: Senior Software Engineer
+        time: 2017 - Present
+        logo: # spiceworks-logo.png
+        company: Spiceworks, Austin
+        details: |
+          Helping to architect and develop large-scale data pipelines for
+          various business needs.
 
-    - role: Software Engineer
-      time: 2014 - 2017
-      logo: # spiceworks-logo.png
-      company: Spiceworks, Austin
-      details: |
-        Worked with a team of developers to write business-critical,
-        high-volume, low-latency systems. Mostly focused on lower-level
-        coding in Golang.
+      - name: Software Engineer
+        time: 2014 - 2017
+        logo: # spiceworks-logo.png
+        company: Spiceworks, Austin
+        details: |
+          Worked with a team of developers to write business-critical,
+          high-volume, low-latency systems. Mostly focused on lower-level
+          coding in Golang.
 
-    - role: Software Development Intern
-      time: 2010 - 2014
-      logo: # spiceworks-logo.png
-      company: Spiceworks, Austin
-      details: |
-        Started writing test automation and worked my way into web development.
-        This time was primarily spent sharpening my
-        software engineering skills, learning how to translate business
-        requirements to code, and learning how agile teams work.
+      - name: Software Development Intern
+        time: 2010 - 2014
+        logo: # spiceworks-logo.png
+        company: Spiceworks, Austin
+        details: |
+          Started writing test automation and worked my way into web development.
+          This time was primarily spent sharpening my
+          software engineering skills, learning how to translate business
+          requirements to code, and learning how agile teams work.
 
-projects:
-    title: Projects
-    intro:
-    assignments:
+experience:
+    title: Experience
+    projects:
+      - title: Real Time Bidder
+        description: "Set of services for intelligently bidding on ad inventory"
+        bullets:
+          - text: "Wrote services that respond in under 10ms (including network latency)"
+          - text: "Horizontally scaled web server up to 1 billion requests per day"
+          - text: "Designed micro-service architecture comprising 10+ services"
+          - text: "Productionized machine learning model to compute bids"
+          - text: "Helped scale product from $0 to ~$10M in annual revenue"
+          - text: "Rigorously tested and wrote monitoring"
+
+      - title: Business Identity Graph
+        description: "Database of companies who visited Spiceworks"
+        bullets:
+          - text: "Generated graph from millions of data points from several sources"
+          - text: "Designed data model where graph was iteratively updated in-place"
+          - text: "Resolved business attributes from a connected component of the graph"
+
       - title: Account Intelligence
         description: "Dashboard showing businesses and their interests"
         bullets:
-          - text: "Wrote data pipeline that calculated the intent of businesses to purchase in certain categories"
+          - text: "Wrote data pipeline to calculate purchase intent of businesses"
           - text: "Integrated Tensorflow model from data science team into pipeline"
           - text: "Architected pipeline to leverage business identity graph"
 
-      - title: Business Identity Graph
-        description: "A database of the companies who visited Spiceworks"
-        bullets:
-          - text: "Generated graph from millions of data points from several sources"
-          - text: "Designed data model where graph was iteratively updated in-place when new data arrived"
-          - text: "Wrote logic to resolve business attributes from a connected component of the graph"
-
-      - title: Attribution Reporting
-        description: "Reports for showing the value generated by advertising spend"
-        bullets:
-          - text: "Wrote pipelines to prepare data for visualization"
-          - text: "Tested and monitored pipelines"
-
       - title: Pixel Tracking
-        description: "Web-tracking service integrated with 100's of companies, ~25M events per day"
+        description: "Web-tracking service integrated with 100's of companies"
         bullets:
           - text: "Led rewrite of service"
           - text: "Integrated open-source browser fingerprinting"
 
-      - title: Real Time Bidder
-        description: "Set of services for intelligently bidding on ad inventory"
-        bullets:
-          - text: "Wrote services that handled requests in under 10ms (including network latency)"
-          - text: "Engineered web server that horizontally scaled up to 1 billion requests per day"
-          - text: "Designed micro-service architecture comprising 10+ services"
-          - text: "Productionized machine learning model to compute bids"
-          - text: "Built data pipelines to facilitate updating models"
-          - text: "Took product from $0 to ~$10M in annual revenue"
-          - text: "Rigorously tested and wrote monitoring"
-
       - title: Segmentation service
-        description: "Puts people into segments based on the actions they have taken"
+        description: "Puts people into segments based on their actions"
         bullets:
           - text: "Wrote jobs to send billions of events into system every month"
           - text: "Integrated with 3rd parties using cookie matching"
           - text: "Debugged / resolved problems around user-identity mappings"
-          - text: "Worked with Data Science to incorporate intent modeling"
+          - text: "Collaborated with Data Science to incorporate intent modeling"
+
+      - title: Other projects
+        bullets:
+          - text: "Ad delivery workflow tools"
+          - text: "Attribution reports / Ad ROI in Tableau"
+          - text: "Site personalization framework"
+
+hackathons:
+    title: Hackathons
+    projects:
+      - title: Horoscope Generator
+        bullets:
+          - text: Used a RNN model
+          - text: Trained using a GPU
+
+      - title: Anonymous email between IT buyers and vendors
+        bullets:
+          - text: Wrote email proxy service that obfuscated the sender’s address
+          - text: Won the hackathon
+
+      - title: Latent engagement grouping in the Spiceworks community forums
+        bullets:
+          - text: Generated graph of ~8M posts and their relationships
+          - text: Used page rank and clustering algorithms to calculate latent clusters
+          - text: Visualized using T-SNE
+
+      - title: Hierarchical text clustering
+        bullets:
+          - text: Used LDA to cluster a few hundred texts from a personal feed
+          - text: Visualized text clusters using pyLDAvis
