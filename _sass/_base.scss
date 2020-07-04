@@ -38,13 +38,20 @@ p {
 	@include box-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
 }
 
+.art-section {
+	.content {
+		width: 600px;
+		height: 480px;
+	}
+}
+
 .sidebar-wrapper {
 	background: $theme-color;
 	position: absolute;
 	right: 0;
-	width: 280px;
+	width: 26rem;
 	height: 100%;
-	min-height: 800px;
+	min-height: 1000px;
 	color: #fff;
 
 	a {
@@ -216,7 +223,7 @@ p {
 		font-size: 16px;
 		margin-top: 0;
 		margin-bottom: 0;
-		font-weight: 500;
+		font-weight: bold;
 	}
 
 	.time {
@@ -306,8 +313,23 @@ p {
 
 .download-button {
 	background-color: #1D98F5;
-	border-radius: 5px;
-	padding: 5px;
+	height: 3.25rem;
+	cursor: pointer;
+	position: relative;
+	width: fit-content;
+	min-width: 7rem;
+	padding: 0 1.5rem;
+	border-radius: 0.5rem;
+	border-width: 0.0625rem;
+	border-style: solid;
+
+	border-color: #375CEF;
+	background: #375CEF;
+	color: #FFFFFF;
+	&:hover {
+		background: #313BB8;
+		border-color: #313BB8;
+	}
 }
 
 .download-button i {

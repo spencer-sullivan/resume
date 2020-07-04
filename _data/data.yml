@@ -8,8 +8,8 @@ sidebar:
 
     # Profile information
     name: Spencer Sullivan
-    tagline: Senior Software/Data/ML Engineer
-    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    tagline: Software/Data/ML Engineer
+    avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     email: sas@fsullivans.net
@@ -30,25 +30,25 @@ sidebar:
 
     interests:
       - item: Climbing / Bouldering
-        link: https://austinboulderingproject.com/
-
-      - item: Card Games
-        link: https://en.wikipedia.org/wiki/Netrunner
+        link:
 
       - item: Cooking
         link:
 
+      - item: Generative Art
+        link: /generative-art
+
 summary:
     title: Summary
     text: |
-      Senior Software / Data / ML Engineer with 6+ years of experience in building business-critical,
-      high-volume, low-latency applications that rely heavily on data and modeling.
-      Currently helping Spiceworks with Petabyte scale data pipelines and applications.
+      Software / Data / Machine Learning Engineer with 7+ years of experience in building business-critical
+      applications that rely heavily on data and modeling. Currently helping ScaleFactor to
+      automate accounting for small businesses.
 
 ideal-job:
     title: Ideal Job
     summary: |
-      I am looking for a job in the San Diego area where I can significanlty impact the business,
+      I am looking for opportunities in the San Diego area (or remote) where I can significantly impact the business,
       work closely with researchers / data scientists to develop, productionize, and scale models, and continually
       learn and grow as an engineer.
 
@@ -57,22 +57,19 @@ skills:
 
     categories:
       - name: Platforms
-        list: Amazon Web Services (AWS), On-Premise Cluster
+        list: Amazon Web Services (AWS), Google Cloud, On-Premise Cluster
 
-      - name: Big Data Tools
-        list: Hadoop, Hive, Spark, Kafka / Kinesis
+      - name: Programming Languages
+        list: Ruby (Rails), Python (Flask), Go, SQL, HTML, JS (Ember)
 
       - name: Databases
         list: Snowflake, Presto, Athena, Redshift, Postgres, Redis, Dynamo
 
-      - name: Programming Languages
-        list: Python, Go, Ruby, SQL, HTML, JS
-
-      - name: Data Pipeline Frameworks
-        list: Airflow, Luigi, Glue, Matillion
+      - name: Data Tools & Frameworks
+        list: Airflow, Luigi, Glue, Hadoop, Hive, Spark, Kafka / Kinesis
 
       - name: Other Technologies
-        list: Docker, Git, Gitlab, Kubernetes, DataDog, Tableau, Lambda, SQS
+        list: Docker, Git, Kubernetes, DataDog, Tableau, Lambda, SQS
 
 education:
     - degree: BS in Computer Science
@@ -84,35 +81,49 @@ career:
     title: Career
     roles:
       - name: Senior Software Engineer
-        time: 2017 - Present
+        time: 2019 - Present
+        company: ScaleFactor, Remote
+        details: |
+          Automating small-business accounting with full-stack web development and ML pipelining.
+
+      - name: Senior Software Engineer
+        time: 2017 - 2019
         logo: # spiceworks-logo.png
         company: Spiceworks, Austin
         details: |
-          Helping to architect and develop large-scale data pipelines for
-          various business needs.
+          Architected and developed Petabyte-scale data pipelines feeding ML models.
 
       - name: Software Engineer
         time: 2014 - 2017
         logo: # spiceworks-logo.png
         company: Spiceworks, Austin
         details: |
-          Worked with a team of developers to write business-critical,
-          high-volume, low-latency systems. Mostly focused on lower-level
-          coding in Golang.
+          Wrote business-critical, high-volume, low-latency systems, mostly in Golang.
 
       - name: Software Development Intern
         time: 2010 - 2014
         logo: # spiceworks-logo.png
         company: Spiceworks, Austin
         details: |
-          Started writing test automation and worked my way into web development.
-          This time was primarily spent sharpening my
-          software engineering skills, learning how to translate business
-          requirements to code, and learning how agile teams work.
+          Learned how to work in agile teams and translate business requirements to code.
 
 experience:
     title: Experience
     projects:
+      - title: ML for Bookkeeping
+        description: "An ML workflow for automatically classifying bank transactions"
+        bullets:
+          - text: "Reduced need for humans to classify transactions manually"
+          - text: "Refined frontend, backend, and modeling code for production use"
+          - text: "Analyzed model performance"
+
+      - title: Accounting File Report Card
+        description: "Self-service health summary dashboard of business accounting books"
+        bullets:
+          - text: "Integrated with 3rd parties to collect and parse accounting reports"
+          - text: "Ran analysis to determine healthy accounting patterns"
+          - text: "Created portal for calculating and viewing insights"
+
       - title: Real Time Bidder
         description: "Set of services for intelligently bidding on ad inventory"
         bullets:
@@ -151,12 +162,6 @@ experience:
           - text: "Debugged / resolved problems around user-identity mappings"
           - text: "Collaborated with Data Science to incorporate intent modeling"
 
-      - title: Other projects
-        bullets:
-          - text: "Ad delivery workflow tools"
-          - text: "Attribution reports / Ad ROI in Tableau"
-          - text: "Site personalization framework"
-
 hackathons:
     title: Hackathons
     projects:
@@ -180,3 +185,17 @@ hackathons:
         bullets:
           - text: Used LDA to cluster a few hundred texts from a personal feed
           - text: Visualized text clusters using pyLDAvis
+
+art:
+    title: Generative Art
+    summary: |
+      A series of programmatically-generated videos written using [Processing](https://processing.org/).
+    pieces:
+      - name: Circuit Board
+        content: circuit-board.mov
+
+      - name: Spinning Circles
+        content: spinning-circles.mov
+
+      - name: Fractures
+        content: fractures.mov

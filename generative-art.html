@@ -1,0 +1,42 @@
+---
+layout: default
+title: Generative Art
+permalink: /generative-art/
+---
+
+{% assign art = site.data.data.art %}
+{% if art %}
+<section class="section art-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-paint-brush fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ art.title }}
+  </h2>
+
+  <div class="summary">
+    {{ art.summary | markdownify }}
+  </div><!--//summary-->
+
+  {% for piece in art.pieces %}
+  <div class="item">
+    <h3 class="art-title">{{ piece.name }}</h3>
+    <!-- <embed
+      src="{{ site.baseurl }}/assets/videos/{{ piece.content }}"
+      Pluginspage="https://support.apple.com/quicktime"
+      class="content"
+      controller="true"
+      loop="false"
+      autoplay="false"
+      name="{{ piece.name }}"
+    /> -->
+
+    <video class="content" alt="{{ piece.name }}" controls>Your browser does not support the &lt;video&gt; tag.
+      <source src="{{ site.baseurl }}/assets/videos/{{ piece.content }}"/>
+    </video>
+  </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
+{% endif %}
